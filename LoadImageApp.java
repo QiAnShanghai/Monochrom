@@ -5,9 +5,6 @@ import java.io.*;
 import javax.imageio.*;
 import javax.swing.*;
 
-/**
- * This class demonstrates how to load an Image from an external file
- */
 public class LoadImageApp extends Component {
           
     BufferedImage img;
@@ -16,7 +13,7 @@ public class LoadImageApp extends Component {
     public void paint(Graphics g) {
         g.drawImage(img, 0, 0, null);
     }
-
+	
 	public LoadImageApp() {
 		try {
 			img = ImageIO.read(new File(filename));
